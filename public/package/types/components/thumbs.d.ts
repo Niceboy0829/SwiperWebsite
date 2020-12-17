@@ -5,16 +5,6 @@ export interface ThumbsMethods {
    * Swiper instance of thumbs swiper
    */
   swiper: Swiper;
-
-  /**
-   * Update thumbs
-   */
-  update(initial: boolean): void;
-
-  /**
-   * Initialize thumbs
-   */
-  init(): boolean;
 }
 
 export interface ThumbsEvents {}
@@ -25,7 +15,7 @@ export interface ThumbsOptions {
    *
    * @default null
    */
-  swiper?: Swiper | null;
+  swiper?: Swiper;
   /**
    * Additional class that will be added to activated thumbs swiper slide
    *
@@ -45,7 +35,7 @@ export interface ThumbsOptions {
    */
   multipleActiveThumbs?: boolean;
   /**
-   * Allows to set on which thumbs active slide from edge it should automatically move scroll thumbs. For example, if set to 1 and last visible thumb will be activated (1 from edge) it will auto scroll thumbs
+   * Allows to set on which thumbs active slide from edge it should automaticall move scroll thumbs. For example, if set to 1 and last visible thumb will be activated (1 from edge) it will auto scroll thumbs
 
    *
    * @default 0

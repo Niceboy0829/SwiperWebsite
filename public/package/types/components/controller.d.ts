@@ -1,12 +1,6 @@
 import Swiper from '../swiper-class';
 
-export interface ControllerMethods {
-  /**
-   * Pass here another Swiper instance or array with Swiper instances that should be controlled
-   * by this Swiper
-   */
-  control?: Swiper;
-}
+export interface ControllerMethods {}
 
 export interface ControllerEvents {}
 

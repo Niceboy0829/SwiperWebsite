@@ -588,7 +588,7 @@ var Swiper = {
     });
     (0, _vue.onBeforeUnmount)(function () {
       if (swiperRef.value && !swiperRef.value.destroyed) {
-        swiperRef.value.destroy(true, false);
+        swiperRef.value.destroy();
       }
     }); // bypass swiper instance to slides
 

@@ -149,7 +149,7 @@ var Swiper = (0, _react.forwardRef)(function (_temp, externalElRef) {
 
     return function () {
       if (swiperRef.current && !swiperRef.current.destroyed) {
-        swiperRef.current.destroy(true, false);
+        swiperRef.current.destroy();
       }
     };
   }, []); // bypass swiper instance to slides

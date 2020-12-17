@@ -145,8 +145,6 @@ interface Swiper extends SwiperClass<SwiperEvents> {
    */
   allowTouchMove: boolean;
 
-  rtlTranslate: boolean;
-
   /**
    * Run transition to next slide.
    *
@@ -247,9 +245,8 @@ interface Swiper extends SwiperClass<SwiperEvents> {
    * Changes slider direction from horizontal to vertical and back.
    *
    * @param direction New direction. If not specified, then will automatically changed to opposite direction
-   * @param needUpdate Will call swiper.update(). Default true
    */
-  changeDirection(direction?: 'horizontal' | 'vertical', needUpdate?: boolean): void;
+  changeDirection(direction?: 'horizontal' | 'vertical'): void;
 
   /**
    * Detach all events listeners
@@ -367,16 +364,6 @@ interface Swiper extends SwiperClass<SwiperEvents> {
    */
   offAny(handler: (eventName: string, ...args: any[]) => void): void;
 
-  isHorizontal(): boolean;
-
-  getBreakpoint(breakpoints: SwiperOptions['breakpoints']): string;
-
-  setBreakpoint(): void;
-
-  currentBreakpoint: any;
-
-  destroyed: boolean;
-  modules: Array<any>; //TODO: add typing
   a11y: A11yMethods;
   autoplay: AutoplayMethods;
   controller: ControllerMethods;

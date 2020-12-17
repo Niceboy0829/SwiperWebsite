@@ -432,7 +432,7 @@ function instance($$self, $$props, $$invalidate) {
 
 	onDestroy(() => {
 		if (swiperInstance && !swiperInstance.destroyed) {
-			swiperInstance.destroy(true, false);
+			swiperInstance.destroy();
 		}
 	});
 

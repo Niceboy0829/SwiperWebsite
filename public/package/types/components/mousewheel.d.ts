@@ -1,4 +1,3 @@
-import Swiper from '../swiper-class';
 import { CSSSelector } from '../shared';
 
 export interface MousewheelMethods {
@@ -18,12 +17,7 @@ export interface MousewheelMethods {
   disable(): void;
 }
 
-export interface MousewheelEvents {
-  /**
-   * Event will be fired on mousewheel scroll
-   */
-  scroll: (swiper: Swiper, event: WheelEvent) => void;
-}
+export interface MousewheelEvents {}
 
 export interface MousewheelOptions {
   /**
@@ -64,12 +58,12 @@ export interface MousewheelOptions {
    *
    * @default null
    */
-  thresholdDelta?: number | null;
+  thresholdDelta?: number;
 
   /**
    * Minimum mousewheel scroll time delta (in ms) to trigger swiper slide change
    *
    * @default null
    */
-  thresholdTime?: number | null;
+  thresholdTime?: number;
 }

@@ -1,5 +1,3 @@
-import Swiper from '../swiper-class';
-
 export interface KeyboardMethods {
   /**
    * Whether the keyboard control is enabled
@@ -17,12 +15,7 @@ export interface KeyboardMethods {
   disable(): void;
 }
 
-export interface KeyboardEvents {
-  /**
-   * Event will be fired on key press
-   */
-  keyPress: (swiper: Swiper, keyCode: string) => void;
-}
+export interface KeyboardEvents {}
 
 export interface KeyboardOptions {
   /**
