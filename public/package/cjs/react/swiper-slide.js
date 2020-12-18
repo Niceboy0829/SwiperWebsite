@@ -17,7 +17,7 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-var SwiperSlide = (0, _react.forwardRef)(function (_temp, externalRef) {
+var SwiperSlide = /*#__PURE__*/(0, _react.forwardRef)(function (_temp, externalRef) {
   var _ref = _temp === void 0 ? {} : _temp,
       _ref$tag = _ref.tag,
       Tag = _ref$tag === void 0 ? 'div' : _ref$tag,
@@ -78,7 +78,7 @@ var SwiperSlide = (0, _react.forwardRef)(function (_temp, externalRef) {
       isVisible: slideClasses.indexOf('swiper-slide-visible') >= 0,
       isDuplicate: slideClasses.indexOf('swiper-slide-duplicate') >= 0,
       isPrev: slideClasses.indexOf('swiper-slide-prev') >= 0 || slideClasses.indexOf('swiper-slide-duplicate-prev') >= 0,
-      isNext: slideClasses.indexOf('swiper-slide-next') >= 0 || slideClasses.indexOf('swiper-slide-duplicate next') >= 0
+      isNext: slideClasses.indexOf('swiper-slide-next') >= 0 || slideClasses.indexOf('swiper-slide-duplicate-next') >= 0
     };
   }
 

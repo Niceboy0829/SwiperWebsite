@@ -5,7 +5,7 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 import React, { useRef, useState, forwardRef } from 'react';
 import { uniqueClasses } from './utils';
 import { useIsomorphicLayoutEffect } from './use-isomorphic-layout-effect';
-var SwiperSlide = forwardRef(function (_temp, externalRef) {
+var SwiperSlide = /*#__PURE__*/forwardRef(function (_temp, externalRef) {
   var _ref = _temp === void 0 ? {} : _temp,
       _ref$tag = _ref.tag,
       Tag = _ref$tag === void 0 ? 'div' : _ref$tag,
@@ -66,7 +66,7 @@ var SwiperSlide = forwardRef(function (_temp, externalRef) {
       isVisible: slideClasses.indexOf('swiper-slide-visible') >= 0,
       isDuplicate: slideClasses.indexOf('swiper-slide-duplicate') >= 0,
       isPrev: slideClasses.indexOf('swiper-slide-prev') >= 0 || slideClasses.indexOf('swiper-slide-duplicate-prev') >= 0,
-      isNext: slideClasses.indexOf('swiper-slide-next') >= 0 || slideClasses.indexOf('swiper-slide-duplicate next') >= 0
+      isNext: slideClasses.indexOf('swiper-slide-next') >= 0 || slideClasses.indexOf('swiper-slide-duplicate-next') >= 0
     };
   }
 

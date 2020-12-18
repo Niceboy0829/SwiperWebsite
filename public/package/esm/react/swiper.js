@@ -12,7 +12,7 @@ import { getChildren } from './get-children';
 import { updateSwiper } from './update-swiper';
 import { renderVirtual, updateOnVirtualData } from './virtual';
 import { useIsomorphicLayoutEffect } from './use-isomorphic-layout-effect';
-var Swiper = forwardRef(function (_temp, externalElRef) {
+var Swiper = /*#__PURE__*/forwardRef(function (_temp, externalElRef) {
   var _ref = _temp === void 0 ? {} : _temp,
       className = _ref.className,
       _ref$tag = _ref.tag,
@@ -130,7 +130,7 @@ var Swiper = forwardRef(function (_temp, externalElRef) {
 
     return function () {
       if (swiperRef.current && !swiperRef.current.destroyed) {
-        swiperRef.current.destroy();
+        swiperRef.current.destroy(true, false);
       }
     };
   }, []); // bypass swiper instance to slides
@@ -142,7 +142,7 @@ var Swiper = forwardRef(function (_temp, externalElRef) {
 
     if (!swiperParams.loop || swiperRef.current && swiperRef.current.destroyed) {
       return slides.map(function (child) {
-        return React.cloneElement(child, {
+        return /*#__PURE__*/React.cloneElement(child, {
           swiper: swiperRef.current
         });
       });
