@@ -6,10 +6,6 @@ import { useGA } from 'src/shared/use-ga';
 
 function App({ Component, pageProps, router }) {
   const meta = Component.layoutProps?.meta || {};
-  const title =
-    meta.metaTitle ||
-    meta.title ||
-    'Swiper - The Most Modern Mobile Touch Slider';
 
   useGA(router);
 
@@ -17,8 +13,15 @@ function App({ Component, pageProps, router }) {
   return (
     <>
       <Head>
-        <title key="title">{title}</title>
-        <meta property="og:title" content={title} />
+        <title key="title">
+          {meta.metaTitle ||
+            meta.title ||
+            'Swiper - The Most Modern Mobile Touch Slider'}
+        </title>
+        <meta
+          property="og:title"
+          content="Swiper - The Most Modern Mobile Touch Slider"
+        />
         <meta
           property="og:description"
           content="Swiper is the most modern free mobile touch slider with hardware accelerated transitions and amazing native behavior."
@@ -31,7 +34,7 @@ function App({ Component, pageProps, router }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@nolimits4web" />
         <meta name="twitter:creator" content="@nolimits4web" />
-        <meta name="twitter:title" content={title} />
+        <meta name="twitter:title" content="Swiper" />
         <meta
           name="twitter:description"
           content="The Most Modern Mobile Touch Slider"
