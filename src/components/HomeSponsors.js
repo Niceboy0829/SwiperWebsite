@@ -11,7 +11,6 @@ export default function HomeSponsors() {
             href={href}
             key={'/' + src}
             title={title}
-            rel="noopener"
             target="_blank"
           >
             <img

@@ -50,7 +50,6 @@ export default function DemosPage() {
         <a
           href="https://github.com/nolimits4web/Swiper/tree/master/demos/"
           target="_blank"
-          rel="noopener"
         >
           here
         </a>
@@ -65,7 +64,6 @@ export default function DemosPage() {
               className="no-underline mr-4 mb-2"
               href={`/demos/${fileName}`}
               target="_blank"
-              rel="noopener"
             >
               Open in new window
             </a>
@@ -73,7 +71,6 @@ export default function DemosPage() {
               className="no-underline"
               href={`https://github.com/nolimits4web/Swiper/blob/master/demos/${fileName}`}
               target="_blank"
-              rel="noopener"
             >
               Source code
             </a>

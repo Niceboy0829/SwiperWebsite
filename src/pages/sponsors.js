@@ -13,11 +13,7 @@ export default function SponsorsPage() {
 
         <div className="text-center">
           Support Swiper on{' '}
-          <a
-            href="http://opencollective.com/swiper"
-            target="_blank"
-            rel="noopener"
-          >
+          <a href="http://opencollective.com/swiper" target="_blank">
             Open Collective
           </a>{' '}
           and help us to make it even better!

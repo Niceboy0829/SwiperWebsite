@@ -145,7 +145,6 @@ export default function HomeSlider() {
                   {process.env.swiperReleaseDate} |<span> </span>
                   <a
                     href="https://github.com/nolimits4web/swiper/blob/master/CHANGELOG.md"
-                    rel="noopener"
                     target="_blank"
                   >
                     Changelog

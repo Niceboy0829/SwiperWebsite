@@ -11,7 +11,6 @@ export default function SidebarSponsors() {
           href={href}
           key={href}
           title={title}
-          rel="noopener"
           target="_blank"
         >
           <img
