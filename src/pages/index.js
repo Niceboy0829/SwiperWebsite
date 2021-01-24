@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-// import Image from 'next/image';
 
 import menuList from 'src/shared/menu-list';
 import Carbon from '@/components/Carbon';
@@ -72,43 +71,43 @@ const feats = [
 
 const logos = [
   {
-    src: '/images/clients/adobe.jpg',
+    src: 'images/logo-adobe.jpg',
     title: 'Adobe',
   },
   {
-    src: '/images/clients/cisco.jpg',
+    src: 'images/logo-cisco.jpg',
     title: 'Cisco',
   },
   {
-    src: '/images/clients/alexa.jpg',
+    src: 'images/logo-alexa.jpg',
     title: 'Alexa',
   },
   {
-    src: '/images/clients/bmw.jpg',
+    src: 'images/logo-bmw.jpg',
     title: 'BMW',
   },
   {
-    src: '/images/clients/disney.jpg',
+    src: 'images/logo-disney.jpg',
     title: 'Disney',
   },
   {
-    src: '/images/clients/peugeot.jpg',
+    src: 'images/logo-peugeot.jpg',
     title: 'Peugeot',
   },
   {
-    src: '/images/clients/verizon.jpg',
+    src: 'images/logo-verizon.jpg',
     title: 'Verizon',
   },
   {
-    src: '/images/clients/macrumors.jpg',
+    src: 'images/logo-macrumors.jpg',
     title: 'MacRumors',
   },
   {
-    src: '/images/clients/lacoste.jpg',
+    src: 'images/logo-lacoste.jpg',
     title: 'Lacoste',
   },
   {
-    src: '/images/clients/vodafone.jpg',
+    src: 'images/logo-vodafone.jpg',
     title: 'Vodafone',
   },
 ];
@@ -175,13 +174,7 @@ export default function Home() {
           <div className="grid grid-cols-4 sm:grid-cols-5 gap-x-6 gap-y-8">
             {logos.map(({ src, title }) => (
               <div key={title}>
-                <img
-                  src={src}
-                  width="205"
-                  height="205"
-                  alt={`${title} logo`}
-                  title={title}
-                />
+                <img src={src} alt={title} title={title} />
               </div>
             ))}
           </div>
