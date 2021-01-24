@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+// import Image from 'next/image';
 
 import menuList from 'src/shared/menu-list';
 import Carbon from '@/components/Carbon';
@@ -71,43 +72,43 @@ const feats = [
 
 const logos = [
   {
-    src: 'images/logo-adobe.jpg',
+    src: '/images/clients/adobe.jpg',
     title: 'Adobe',
   },
   {
-    src: 'images/logo-cisco.jpg',
+    src: '/images/clients/cisco.jpg',
     title: 'Cisco',
   },
   {
-    src: 'images/logo-alexa.jpg',
+    src: '/images/clients/alexa.jpg',
     title: 'Alexa',
   },
   {
-    src: 'images/logo-bmw.jpg',
+    src: '/images/clients/bmw.jpg',
     title: 'BMW',
   },
   {
-    src: 'images/logo-disney.jpg',
+    src: '/images/clients/disney.jpg',
     title: 'Disney',
   },
   {
-    src: 'images/logo-peugeot.jpg',
+    src: '/images/clients/peugeot.jpg',
     title: 'Peugeot',
   },
   {
-    src: 'images/logo-verizon.jpg',
+    src: '/images/clients/verizon.jpg',
     title: 'Verizon',
   },
   {
-    src: 'images/logo-macrumors.jpg',
+    src: '/images/clients/macrumors.jpg',
     title: 'MacRumors',
   },
   {
-    src: 'images/logo-lacoste.jpg',
+    src: '/images/clients/lacoste.jpg',
     title: 'Lacoste',
   },
   {
-    src: 'images/logo-vodafone.jpg',
+    src: '/images/clients/vodafone.jpg',
     title: 'Vodafone',
   },
 ];
@@ -150,7 +151,7 @@ export default function Home() {
             <a href="//framework7.io">Framework7</a> - a fully-featured
             framework for building iOS &amp; Android apps. Swiper is also a
             default slider component in the{' '}
-            <a href="http://ionicframework.com/" target="blank">
+            <a href="http://ionicframework.com/" target="blank" rel="noopener">
               Ionic Framework
             </a>
             .
@@ -174,7 +175,13 @@ export default function Home() {
           <div className="grid grid-cols-4 sm:grid-cols-5 gap-x-6 gap-y-8">
             {logos.map(({ src, title }) => (
               <div key={title}>
-                <img src={src} alt={title} title={title} />
+                <img
+                  src={src}
+                  width="205"
+                  height="205"
+                  alt={`${title} logo`}
+                  title={title}
+                />
               </div>
             ))}
           </div>
@@ -200,7 +207,11 @@ export default function Home() {
           <HomeHeading>Sponsors</HomeHeading>
           <div className="my-4">
             Support Swiper on{' '}
-            <a href="http://opencollective.com/swiper" target="_blank">
+            <a
+              href="http://opencollective.com/swiper"
+              target="_blank"
+              rel="noopener"
+            >
               Open Collective
             </a>{' '}
             and help us to make it even better!

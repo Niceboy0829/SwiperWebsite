@@ -1,5 +1,6 @@
 import React from 'react';
 import sdk from '@stackblitz/sdk';
+import { ReactComponent as StackblitzLogo } from '@/img/stackblitz.svg';
 import Heading from '@/components/Heading';
 import { WithSidebarLayout } from '@/layouts/withSidebar';
 import { useLazyDemos } from 'src/shared/use-lazy-demos';
@@ -49,6 +50,7 @@ export default function DemosPage() {
         <a
           href="https://github.com/nolimits4web/Swiper/tree/master/demos/"
           target="_blank"
+          rel="noopener"
         >
           here
         </a>
@@ -63,6 +65,7 @@ export default function DemosPage() {
               className="no-underline mr-4 mb-2"
               href={`/demos/${fileName}`}
               target="_blank"
+              rel="noopener"
             >
               Open in new window
             </a>
@@ -70,19 +73,16 @@ export default function DemosPage() {
               className="no-underline"
               href={`https://github.com/nolimits4web/Swiper/blob/master/demos/${fileName}`}
               target="_blank"
+              rel="noopener"
             >
               Source code
             </a>
             <a
-              className="no-underline"
+              className="no-underline ml-2"
               href="#"
               onClick={(e) => createStackBlitz(e, title, fileName)}
             >
-              <img
-                className="h-3 inline"
-                style={{ margin: 0 }}
-                src="images/stackblitz-icon.svg"
-              />
+              <StackblitzLogo className="inline" width="19" height="14" />
               <span>Edit in StackBlitz</span>
             </a>
           </div>

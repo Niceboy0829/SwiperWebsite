@@ -1,6 +1,7 @@
 import menuList from '../shared/menu-list';
 import Link from 'next/link';
 import FooterSponsors from './FooterSponsors';
+// import Image from 'next/image';
 
 const menu = [
   { name: 'Swiper', link: '/' },
@@ -22,6 +23,7 @@ export default function Footer() {
           Supported by:{' '}
           <a
             href="https://www.colognewebdesign.de"
+            rel="noopener"
             target="_blank"
             title="COLOGNE WEBDESIGN"
           >
@@ -30,10 +32,13 @@ export default function Footer() {
         </div>
         <FooterSponsors />
         <div className="text-center my-8">
-          <a href="https://www.netlify.com" target="_blank">
+          <a href="https://www.netlify.com" target="_blank" rel="noopener">
             <img
+              width={114}
+              height={51}
+              alt="Desploys on Netlify"
               className="inline"
-              src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg"
+              src="/images/netlify-color-bg.svg"
             />
           </a>
         </div>
