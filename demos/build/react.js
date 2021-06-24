@@ -169,7 +169,7 @@ function renderPostHTML(config, vars, reverse = false) {
         Object.keys(_config).forEach((key) => {
           Object.keys(node.attrs).forEach((attrName) => {
             if (attrName.startsWith('#')) {
-              node.attrs['onSwiper'] = `{setSwiperRef}`;
+              node.attrs['ref'] = `{${attrName.replace('#', '')}}`;
               delete node.attrs[attrName];
             }
             if (attrName === 'thumbsSlider') {

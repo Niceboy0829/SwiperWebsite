@@ -134,28 +134,28 @@ module.exports = (mode = 'core') => ({
   }
   `,
     react: `
-  const [swiperRef, setSwiperRef] = useState(null);
+  const swiperRef = useRef(null);
 
   let appendNumber = 4;
   let prependNumber = 1;
 
   const prepend2 = () => {
-    swiperRef.prependSlide([
+    swiperRef.current.swiper.prependSlide([
       '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>',
       '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>'
     ]);
   }
 
   const prepend = () => {
-    swiperRef.prependSlide('<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>');
+    swiperRef.current.swiper.prependSlide('<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>');
   }
 
   const append = () => {
-    swiperRef.appendSlide('<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>');
+    swiperRef.current.swiper.appendSlide('<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>');
   }
 
   const append2 = () => {
-    swiperRef.appendSlide([
+    swiperRef.current.swiper.appendSlide([
       '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>',
       '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>'
     ]);
